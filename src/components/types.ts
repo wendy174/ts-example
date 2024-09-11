@@ -18,3 +18,8 @@ export interface PersonListProps {
         last: string
     }[]
 }
+
+export interface StatusProps { 
+    // union of string literals 
+    status: 'success' | 'loading' | "error"
+}
