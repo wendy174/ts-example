@@ -1,5 +1,6 @@
 import './App.css'; 
 import { Greet } from './components/Greet'; 
+import { Greet2 } from './components/Greet2'; 
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList'
 import { Status } from './components/Status'; 
@@ -18,6 +19,7 @@ const nameList = [
   return (
     <div className='App'> 
       <Greet name='Wendy' age={32} isAdult={true} />
+      <Greet2 name='Wendy' isAdult={true}/>
       <PersonList names={nameList}/>
       <Status status='error'/>
       <Heading>Placeholder text</Heading> 
