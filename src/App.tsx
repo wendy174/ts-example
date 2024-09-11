@@ -3,6 +3,8 @@ import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList'
 import { Status } from './components/Status'; 
+import { Heading } from './components/Heading'; 
+
 function App() {
 
   //personName is passed to Person component as a prop 
@@ -17,6 +19,8 @@ const nameList = [
       <Greet name='Wendy' age={32} isAdult={true} />
       <PersonList names={nameList}/>
       <Status status='error'/>
+      <Heading>Placeholder text</Heading> 
+
 
     </div>
   )
