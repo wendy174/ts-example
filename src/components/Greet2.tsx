@@ -3,7 +3,6 @@
 // Example of default value props 
     // age has default value of 30 
 
-
 interface Greet2Props { 
     name: string; 
     age?: number; 
