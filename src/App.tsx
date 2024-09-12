@@ -6,6 +6,7 @@ import { PersonList } from './components/PersonList'
 import { Status } from './components/Status'; 
 import { Heading } from './components/Heading'; 
 import { Oscar } from './components/Oscar'; 
+import { Button } from './components/Button'; 
 
 function App() {
 
@@ -16,16 +17,26 @@ const nameList = [
   { first: 'Cindy', last: 'Yeung'}
 ]
 
+const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => { 
+  console.log('Button Clicked', event)
+}
+
   return (
     <div className='App'> 
       <Greet name='Wendy' age={32} isAdult={true} />
+      <hr></hr>
       <Greet2 name='Wendy' isAdult={true}/>
-      <PersonList names={nameList}/>
+      <hr></hr>
       <Status status='error'/>
-      <Heading>Placeholder text</Heading> 
+      <hr></hr>
+      <Heading>Placeholder text</Heading>
+      <hr></hr>
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
-      </Oscar>
+      </Oscar>     
+      <hr></hr>
+      <Button handleClick={handleClick}/>
+      <hr></hr>
 
     </div>
   )

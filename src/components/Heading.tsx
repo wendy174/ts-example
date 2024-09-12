@@ -6,8 +6,8 @@ interface HeadingProps {
 }
 
 
-export const Heading = (props: HeadingProps) => { 
+export const Heading = ({children}: HeadingProps) => { 
     return ( 
-        <h2>{props.children}</h2>
+        <h2>{children}</h2>
     )
 }
