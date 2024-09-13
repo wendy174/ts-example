@@ -7,6 +7,7 @@ import { Status } from './components/Status';
 import { Heading } from './components/Heading'; 
 import { Oscar } from './components/Oscar'; 
 import { Button } from './components/Button'; 
+import { Input } from './components/Input'; 
 
 function App() {
 
@@ -20,6 +21,10 @@ const nameList = [
 const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => { 
   console.log('Button Clicked', event)
 }
+
+const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => ( 
+  console.log(event)
+)
 
   return (
     <div className='App'> 
@@ -37,6 +42,7 @@ const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
       <hr></hr>
       <Button handleClick={handleClick}/>
       <hr></hr>
+      <Input value='' handleChange= {handleChange} />
 
     </div>
   )
