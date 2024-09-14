@@ -8,6 +8,7 @@ import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar'; 
 import { Button } from './components/Button'; 
 import { Input } from './components/Input'; 
+import { Styles } from './components/Styles'
 
 function App() {
 
@@ -43,7 +44,8 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => (
       <Button handleClick={handleClick}/>
       <hr></hr>
       <Input value='' handleChange= {handleChange} />
-
+      <hr></hr>
+      <Styles styles={{border: '5px solid black', padding: '5rem'}} />
     </div>
   )
 }
