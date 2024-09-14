@@ -7,10 +7,10 @@ import { PersonProps } from './types';
 
 
 // Person component receives person prop from App
-export const Person = ({person}: PersonProps) => { 
+export const Person = ({name}: PersonProps) => { 
     // Destructure person object to extract first and last names 
         // can also do this in the parent component 
-    const {first, last} = person; 
+    const {first, last} = name; 
     return ( 
         <div>
             {first} {last}
