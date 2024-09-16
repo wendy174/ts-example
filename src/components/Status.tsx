@@ -1,4 +1,4 @@
-// example of union of string literals 
+// Example of union of string literals 
 
 import { StatusProps } from './types'; 
 

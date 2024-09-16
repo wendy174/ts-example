@@ -5,14 +5,11 @@
     // names: { first: string; last: string; }[] syntax means its an array [] of objects ({ first: string; last: string; }). 
     // Person Props does not include [] because it handles only one person at a time 
 
-
-// reusablity 
 export type Name = { 
     first: string; 
     last: string; 
 }
 
-    
 export interface PersonProps { 
     name: Name
 }

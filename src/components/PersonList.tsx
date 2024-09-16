@@ -8,7 +8,8 @@ interface PersonListProps {
 export const PersonList = ({names}: PersonListProps) => { 
     return ( 
         <div>
-            <h1>list of persons</h1>
+            <h3>Example of iterating through array </h3>
+            <h1>List of persons</h1>
             {names.map((name) => { 
                 return (
                 <h2 key={name.first}>

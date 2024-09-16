@@ -2,7 +2,7 @@
     // button accepts click event as prop 
 
 interface ButtonProps { 
-    handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void // no parameters and returns nothing 
+    handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void // void => returns nothing 
     // capture event with type React.MouseEvent
 }
 
