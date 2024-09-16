@@ -29,6 +29,7 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => (
 
   return (
     <div className='App'> 
+      <PersonList names = {nameList}/>
       <Greet name='Wendy' age={32} isAdult={true} />
       <hr></hr>
       <Greet2 name='Wendy' isAdult={true}/>
