@@ -9,6 +9,7 @@ import { Oscar } from './components/Oscar';
 import { Button } from './components/Button'; 
 import { Input } from './components/Input'; 
 import { Styles } from './components/Styles'
+import { Login } from './components/Login';
 
 function App() {
 
@@ -29,6 +30,7 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => (
 
   return (
     <div className='App'> 
+      <Login />
       <PersonList names = {nameList}/>
       <Greet name='Wendy' age={32} isAdult={true} />
       <hr></hr>
