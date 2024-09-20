@@ -10,6 +10,9 @@ import { Button } from './components/Button';
 import { Input } from './components/Input'; 
 import { Styles } from './components/Styles'
 import { Login } from './components/Login';
+import { User } from './components/User'; 
+import { User2 } from './components/User2'; 
+
 
 function App() {
 
@@ -30,8 +33,14 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => (
 
   return (
     <div className='App'> 
+      <User />
+      <hr></hr>
+      <User2 />
+      <hr></hr>
       <Login />
+      <hr></hr>
       <PersonList names = {nameList}/>
+      <hr></hr>
       <Greet name='Wendy' age={32} isAdult={true} />
       <hr></hr>
       <Greet2 name='Wendy' isAdult={true}/>
